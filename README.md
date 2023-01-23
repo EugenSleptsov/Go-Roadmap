@@ -88,27 +88,17 @@ Go uses packages to organize and share code. Here are some key concepts to under
 
 - Writing your own packages: Go allows you to write your own packages and share them with others. You can organize your code into packages and use the `export` keyword to make certain identifiers accessible to other packages.
 
-## 5. Structs and Interfaces
+## 5. Structs, Interfaces, Embedding, Methods/Functions
 
-Go has several built-in data types for working with complex data structures. Here are some key concepts to understand:
+Go uses structs, interfaces, embedding, and methods/functions to define types and encapsulate data and behavior. Here are some key concepts to understand:
 
-- Structs: Go has structs which allow you to define your own custom data types. You can define fields for the struct and also methods for structs. A struct is a composite data type that groups together zero or more values with different types. For example:
+- Structs: A struct is a composite data type that groups together zero or more values with different types. You can define fields for the struct and also methods for structs. Structs can be used to define your own custom data types.
 
-```go
-type Person struct {
-    name string
-    age int
-}
-```
+- Interfaces: An interface defines a set of methods that a type must implement, but it doesn't provide an implementation. Interfaces are used to define contracts for types. You can use polymorphism by defining the same method on different structs and then being able to use them interchangeably.
 
-- Interfaces: Go has interfaces which allow you to define contracts for types. An interface defines a set of methods that a type must implement, but it doesn't provide an implementation. Interfaces are defined using the type keyword, followed by the name of the interface and a set of method signatures. For example:
-```go
-type Shape interface {
-    area() float64
-    perimeter() float64
-}
-```
-- Polymorphism: Go interfaces allows you to use polymorphism by defining the same method on different structs and then being able to use them interchangeably. This is known as "duck typing" in Go.
+- Embedding: Go allows you to embed types within other types using the struct literal. This allows you to reuse fields and methods of an existing type in a new type. Embedding allows you to create a new type that has all the fields and methods of the embedded type and also add new fields and methods.
+
+- Methods/Functions: Go allows you to attach methods to struct types and you can define functions to perform specific tasks. Methods have a receiver, which is the struct type that the method is bound to. Functions are independent of structs and can be called without any specific receiver.
 
 ## 6. Pointers
 
