@@ -26,10 +26,9 @@ Go has a simple and easy to learn syntax. Here are some basic concepts to get yo
 - Operators: Go has a variety of operators such as arithmetic, relational, and logical operators that you can use in your code. Go supports common arithmetic operators like +, -, *, /, and %, as well as relational operators like ==, !=, >, <, >=, <= and logical operators like &&, ||, !.
 
 - Loops: Go has a `for` loop which is used to execute a block of code repeatedly. The `for` loop can be used in three different ways:
-
--- `for initialization; condition; post {}`
--- `for condition {}`
--- `for {}`
+  - `for initialization; condition; post {}`
+  - `for condition {}`
+  - `for {}`
 
 - Comments: Go uses // for single-line comments and /* */ for multi-line comments
 
